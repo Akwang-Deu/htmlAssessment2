@@ -1,19 +1,33 @@
-#body{
-    background-color: rgb(211,218,235);
-}
-#container1{
-    border: 1px solid white;
-    background: white;
-    margin: 3%;
-    height: 800px;
+
+.Imlabooks{
+    height:50px ;
+    width: 50px;
     
+}
+#main-header{
+    display: flex;
+    gap: 10%;
+ 
 
 }
-navbar{
-    display: flex;
-    gap: 5%;
+nav{
     justify-content: center;
     font-size: larger;
+    -webkit-text-fill-color: black;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+  
+}
+label{
+    margin-top: 3%;
+    margin-left: 15%;
+}
+a{
+    text-decoration: none;
+    padding: 3%;
+
 }
 button{
     background-color: rgb(121, 186, 182);
@@ -23,70 +37,128 @@ button{
     color: white;
   
 }
-.innercontainer{
-    display: flex;
-    gap: 10%;
-    font-size: large;
+.input-wrap{
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    margin-top: 10%;
 }
-#bowl{
+.input-wrap input{
+    border: 1px solid;
+    border-radius: 20px;
+    padding-right: 40px;
+    padding: 15%;
+    width: 600px;
+}
+.input-wrap button{
+    position: absolute;
+    margin-left: 450px;
+    padding: 8%;
+    top: 25%;
+    width: 70%;
+    border: none;
+    background-color: rgb(113,182,176);
+    border-radius: 10%;
+   
+}
+
+
+#landing-page{
     display: flex;
     gap: 10%;
     justify-content: center;
     font-size: larger;
+    margin-top: 5%;
 
 }
-.photo1{
+.social-icon{
     height: 50px ;
     width: 50px;
     gap: 5%;
 }
-#imagescontainer{
+#social-network{
     display: flex;
     gap: 10%;
+    margin-top: 20%;
 }
-.image{
+.imageofgirl{
+    height: 500px;
+    width: 500px;
     border-radius: 50%;
 }
 footer{
     border: 1px solid white;
     background-color:rgb(227,240,239);
 }
-#photos{
+#footer-logo{
 
     display: flex;
     justify-content: center;
     gap: 5%;
 
 }
-.photo2{
+.logo{
     height: 80px ;
     width: 80px;
     display: flex;
     justify-content: center;
     gap: 5%;
 }
-.p{
+.footer-text{
     font-size: larger;
     text-align: center;
 }
 @media screen and (min-width:320px) and (max-width:480px){
-    navbar{
-        display: flex;
-        justify-content: center;
-        font-size: small;
+    nav{
+      display: grid;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: small;
+      margin-right:50% ;
+    }
+    #main-header{
+        display: grid;
+        flex-wrap: wrap; 
+    }
+    label{
+        margin-top: 3%;
+        font-size: large;
     }
     button{
         border-radius: 5px;
         padding: 5px 10px;
-        
+        margin-bottom: 20%;
     }
-    .innercontainer{
-        display: wrap;
-        gap: 2%;
-        font-size: small;
-    }
-    footer{
-       display: grid;
-    }
-}
+    #landing-page{
+        display: grid;
+        justify-content: center;
+        font-size: larger;
+        margin-top: 5%;
     
+    }
+    #footer-logo{
+
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 20%;
+    
+    }
+    
+    .imageofgirl{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-bottom: 20%;
+    }
+    .input-wrap{
+        width: 170px;
+    }
+    .input-wrap input{
+        width: 200px;
+    }
+    .input-wrap button{
+        margin-left: 100px;  
+    }
+
+}
